@@ -1,0 +1,12 @@
+{
+  "name": "SENTINEL ARC — Live Surveillance Matrix, Security & Access Control",
+  "description": "Live surveillance console with real hardware camera integration, AI facial recognition, motion detection, encrypted cloud storage, automatic message dispatch to authorities, audible alarm sirens, and device contacts access for instant SOS alerts.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="50%" stop-color="#091428" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#0ea5e9" stroke-width="4" stroke-opacity="0.3" />
+  
+  <!-- Outer Radar Reticle Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#0ea5e9" stroke-width="3" stroke-opacity="0.25" stroke-dasharray="16 10" />
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.2" />
+  
+  <!-- Shield Badge -->
+  <path d="M 256 95 L 380 148 C 380 270 256 385 256 385 C 256 385 132 270 132 148 Z" fill="url(#shieldGrad)" stroke="#38bdf8" stroke-width="8" stroke-linejoin="round" />
+  
+  <!-- Surveillance Aperture / Lens Core -->
+  <circle cx="256" cy="225" r="54" fill="#020617" stroke="#38bdf8" stroke-width="6" />
+  <circle cx="256" cy="225" r="38" fill="#0f172a" stroke="#0284c7" stroke-width="4" />
+  
+  <!-- Camera Sensor Eye & Emergency Pulse -->
+  <circle cx="256" cy="225" r="20" fill="#ef4444" />
+  <circle cx="250" cy="219" r="6" fill="#ffffff" fill-opacity="0.8" />
+  
+  <!-- Crosshairs -->
+  <line x1="256" y1="150" x2="256" y2="185" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+  <line x1="256" y1="265" x2="256" y2="300" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+  <line x1="180" y1="225" x2="215" y2="225" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+  <line x1="297" y1="225" x2="332" y2="225" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Tactical Label -->
+  <text x="256" y="445" text-anchor="middle" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="28" letter-spacing="8">SENTINEL</text>
+</svg>

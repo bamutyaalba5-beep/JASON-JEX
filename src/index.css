@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --bg-ink: #04090f;
+  --bg-panel: #0a131e;
+  --bg-panel-2: #101c2c;
+  --bg-panel-3: #18273c;
+  --border-line: rgba(56, 189, 248, 0.18);
+  --border-line-hover: rgba(56, 189, 248, 0.4);
+  --cyan: #38bdf8;
+  --cyan-dim: #0284c7;
+  --emerald: #10b981;
+  --emerald-dim: #059669;
+  --amber: #f59e0b;
+  --red: #ef4444;
+  --red-glow: rgba(239, 68, 68, 0.45);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #04090f;
+  color: #e2e8f0;
+  font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-exo {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Strobe Alarm Effect for Active Emergency */
+@keyframes strobeRed {
+  0%, 100% {
+    background-color: rgba(239, 68, 68, 0.12);
+  }
+  50% {
+    background-color: rgba(239, 68, 68, 0.35);
+  }
+}
+
+.alarm-strobe {
+  animation: strobeRed 0.8s ease-in-out infinite;
+}
+
+/* Scanline and Radar Overlay */
+.radar-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.radar-sweep::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.8), transparent);
+  animation: scanline 2.5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scanline {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060e18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
